@@ -1,9 +1,11 @@
-import 'package:chatbot/pages/home_page.dart';
-import 'package:chatbot/services/auth_service.dart';
-import 'package:chatbot/services/database_service.dart';
-import 'package:chatbot/widgets/widgets.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+
+import '../services/auth_service.dart';
+import '../services/database_service.dart';
+import '../widgets/widgets.dart';
+import 'home_page.dart';
 
 class GroupInfo extends StatefulWidget {
   final String groupId;

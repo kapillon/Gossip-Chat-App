@@ -1,9 +1,11 @@
-import 'package:chatbot/pages/group_info.dart';
-import 'package:chatbot/services/database_service.dart';
-import 'package:chatbot/widgets/message_tile.dart';
-import 'package:chatbot/widgets/widgets.dart';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+
+import '../services/database_service.dart';
+import '../widgets/message_tile.dart';
+import '../widgets/widgets.dart';
+import 'group_info.dart';
 
 class ChatPage extends StatefulWidget {
   final String groupId;

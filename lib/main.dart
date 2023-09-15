@@ -1,10 +1,12 @@
-import 'package:chatbot/helper/helper_function.dart';
-import 'package:chatbot/pages/auth/login_page.dart';
-import 'package:chatbot/pages/home_page.dart';
-import 'package:chatbot/shared/constants.dart';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:gossip/pages/auth/login_page.dart';
+import 'package:gossip/pages/home_page.dart';
+import 'package:gossip/shared/constants.dart';
+
+import 'helper/helper_function.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

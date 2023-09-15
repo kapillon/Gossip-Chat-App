@@ -1,13 +1,14 @@
-import 'package:chatbot/helper/helper_function.dart';
-import 'package:chatbot/pages/auth/login_page.dart';
-import 'package:chatbot/pages/profile_page.dart';
-import 'package:chatbot/pages/search_page.dart';
-import 'package:chatbot/services/database_service.dart';
-import 'package:chatbot/widgets/group_tile.dart';
-import 'package:chatbot/widgets/widgets.dart';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:gossip/pages/profile_page.dart';
+import 'package:gossip/pages/search_page.dart';
+import '../helper/helper_function.dart';
 import '../services/auth_service.dart';
+import '../services/database_service.dart';
+import '../widgets/group_tile.dart';
+import '../widgets/widgets.dart';
+import 'auth/login_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -181,7 +182,7 @@ class _HomePageState extends State<HomePage> {
               Navigator.of(context).pop();
             },
             style: ElevatedButton.styleFrom(
-              primary: Theme.of(context).primaryColor,
+              backgroundColor: Theme.of(context).primaryColor,
             ),
               child: const Text("CANCEL"),
             ),
@@ -200,7 +201,7 @@ class _HomePageState extends State<HomePage> {
               }
             },
               style: ElevatedButton.styleFrom(
-                primary: Theme.of(context).primaryColor,
+                backgroundColor: Theme.of(context).primaryColor,
               ),
               child: const Text("CREATE"),
             )

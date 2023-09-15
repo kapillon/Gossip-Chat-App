@@ -1,10 +1,11 @@
-import 'package:chatbot/helper/helper_function.dart';
-import 'package:chatbot/pages/auth/login_page.dart';
-import 'package:chatbot/pages/home_page.dart';
-import 'package:chatbot/services/auth_service.dart';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import '../../helper/helper_function.dart';
+import '../../services/auth_service.dart';
 import '../../widgets/widgets.dart';
+import '../home_page.dart';
+import 'login_page.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -99,7 +100,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     width: double.infinity,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                          primary: Theme.of(context).primaryColor,
+                          backgroundColor: Theme.of(context).primaryColor,
                           elevation: 0,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30)

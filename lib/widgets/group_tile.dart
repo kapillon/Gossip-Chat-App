@@ -1,5 +1,6 @@
-import "package:chatbot/widgets/widgets.dart";
+
 import "package:flutter/material.dart";
+import "package:gossip/widgets/widgets.dart";
 import "../pages/chat_page.dart";
 
 class GroupTile extends StatefulWidget {
